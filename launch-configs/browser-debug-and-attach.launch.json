@@ -1,0 +1,13 @@
+// start chrome --remote-debugging-port=9222
+// http://127.0.0.1:9222/json/version (verify, if not, kill chrome process)
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "attach",
+      "name": "Attach to browser",
+      "port": 9222
+    }
+  ]
+}

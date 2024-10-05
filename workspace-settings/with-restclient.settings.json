@@ -1,0 +1,9 @@
+{
+  "rest-client.environmentVariables": {
+    "dev": {
+      "base": "http://localhost:3000/api"
+    }
+  },
+  "rest-client.previewOption": "exchange",
+  "rest-client.previewColumn": "current"
+}
