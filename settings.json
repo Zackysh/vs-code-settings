@@ -1,0 +1,241 @@
+{
+  // Formatter Settings
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.printWidth": 95,
+  "prettier.arrowParens": "avoid",
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[java]": {
+    "editor.rulers": [110]
+  },
+  // Vanilla Formatting Tweaks
+  "files.insertFinalNewline": true,
+  "typescript.preferences.organizeImports": {
+    "sortImportsBy": "member"
+  },
+  // VCS Settings
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  // Vanilla Behaviour Tweaks
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.mouseWheelScrollSensitivity": 2,
+  "workbench.list.mouseWheelScrollSensitivity": 2,
+  "editor.cursorSurroundingLines": 15,
+  "editor.hover.delay": 1000,
+  "files.exclude": {
+    "dist": true,
+    "node_modules": true,
+    ".angular": true,
+    "**/.git": false
+  },
+  // Vanilla UI Tweaks
+  "editor.padding.top": 10,
+  "zenMode.fullScreen": true,
+  // Vanilla UI Togglings
+  "window.customTitleBarVisibility": "windowed",
+  "breadcrumbs.enabled": true,
+  "editor.minimap.enabled": false,
+  "zenMode.showTabs": "none",
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
+  "window.commandCenter": false,
+  "editor.lightbulb.enabled": "off",
+  "editor.rulers": [95],
+  // Core Utility Settings
+  "markdown-preview-enhanced.previewTheme": "monokai.css",
+  "errorLens.enabledDiagnosticLevels": ["error", "warning", "info", "hint"],
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "gotoNextPreviousMember.symbolKinds": [
+    "class",
+    "constructor",
+    "enum",
+    "interface",
+    "method"
+  ],
+  // Language Settings
+  "auto-close-tag.activationOnLanguage": ["html"],
+  "editor.linkedEditing": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.suggest.autoImports": true,
+  "typescript.preferences.includePackageJsonAutoImports": "on",
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "typescript.tsserver.web.typeAcquisition.enabled": true,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.preferences.importModuleSpecifierEnding": "minimal",
+  // Vanilla Theming Settings
+  "workbench.colorTheme": "Material Theme Darker",
+  "workbench.iconTheme": "a-file-icon-vscode",
+  "editor.fontFamily": "JetBrains Mono, 'MonaspiceKr Nerd Font', 'Consolas', 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 12.5,
+  "terminal.integrated.fontSize": 12,
+  "window.zoomLevel": 1.25,
+  "editor.lineHeight": 1.7,
+  "editor.semanticHighlighting.enabled": true,
+  "editor.bracketPairColorization.enabled": true,
+  // Theming Utilities
+  "indentRainbow.indicatorStyle": "light",
+  "indentRainbow.lightIndicatorStyleLineWidth": 1,
+  "indentRainbow.ignoreErrorLanguages": ["typescript, html"],
+  "indentRainbow.colors": [
+    "rgba(255, 255, 23, 0.3)",
+    "rgba(77, 255, 77, 0.3)",
+    "rgba(255, 115, 255, 0.3)",
+    "rgba(47, 236, 236, 0.3)"
+  ],
+  "rainbowTags.colors": ["#e5d77b", "#bfe57b", "#8ae57b", "#7be5a2", "#7be5d7", "#7bbfe5"],
+  "todo-tree.general.tags": ["TODO", "--- TODO", "ADAPT", "--- ADAPT"],
+  "todo-tree.general.tagGroups": {
+    "TODO": ["TODO", "--- TODO"],
+    "ADAPT": ["ADAPT", "--- ADAPT"]
+  },
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "icon": "check",
+      "type": "text-and-comment",
+      "foreground": "#31e7c9"
+    },
+    "ADAPT": {
+      "icon": "check",
+      "type": "text-and-comment",
+      "foreground": "#49dc6e"
+    }
+  },
+  "powermode.enabled": true,
+  "powermode.combo.location": "off",
+  "powermode.combo.counterEnabled": "hide",
+  "powermode.shake.enabled": false,
+  // Colorization
+  "workbench.colorCustomizations": {
+    "[Material Theme Darker]": {
+      "sideBar.foreground": "#c6c6c6",
+      "gitDecoration.untrackedResourceForeground": "#dda0bcfc",
+      "gitDecoration.stageModifiedResourceForeground": "#99b9ffcd",
+      "gitDecoration.ignoredResourceForeground": "#979797",
+      "quickInput.foreground": "#a5a5a5",
+      "sideBar.border": "#407286",
+      "panel.border": "#407286",
+      "editor.findMatchHighlightBackground": "#787c49b5",
+      "editorBracketHighlight.foreground1": "#f1db4e",
+      "editorBracketHighlight.foreground2": "#4c994c",
+      "editorBracketHighlight.foreground3": "#7f8cff",
+      "editorBracketHighlight.unexpectedBracket.foreground": "#ff0000"
+    }
+  },
+  "editor.tokenColorCustomizations": {
+    "[Material Theme*]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "keyword.control",
+            "variable.language.this.ts",
+            "support.type.primitive.ts",
+            "constant.language",
+            "constant.language.boolean",
+            "keyword.operator.new",
+            "keyword.operator.expression"
+          ],
+          "settings": { "foreground": "#C792EA" }
+        },
+        {
+          "scope": ["comment", "punctuation.definition.comment.json.comments"],
+          "settings": { "foreground": "#ada5a9" }
+        },
+        {
+          "scope": "punctuation.decorator.ts",
+          "settings": { "foreground": "#8dd5ae" }
+        },
+        {
+          "scope": ["string", "punctuation.definition.string"],
+          "settings": { "foreground": "#dca67d" }
+        },
+        {
+          "scope": "constant.numeric",
+          "settings": { "foreground": "#aed8b4" }
+        },
+        {
+          "scope": [
+            "variable",
+            "support.variable.property.ts",
+            "meta.structure.dictionary.json"
+          ],
+          "settings": { "foreground": "#e98f8f" }
+        },
+        {
+          "scope": "storage.type.function.arrow.ts",
+          "settings": { "foreground": "#89DDFF" }
+        },
+        {
+          "scope": [
+            "entity.other.attribute-name.html",
+            "entity.name.function.ts",
+            "meta.structure.dictionary.json support.type.property-name.json"
+          ],
+          "settings": { "foreground": "#f0be6c" }
+        },
+        {
+          "scope": ["support.constant.property-value.css"],
+          "settings": { "foreground": "#61AFE1" }
+        }
+      ]
+    }
+  },
+  "editor.semanticTokenColorCustomizations": {
+    "[Material Theme*]": {
+      "rules": {
+        "class.defaultLibrary": {
+          "foreground": "#677bef",
+          "fontStyle": "bold"
+        },
+        "variable.defaultLibrary": {
+          "foreground": "#677bef",
+          "fontStyle": "bold"
+        },
+        "class": "#8dd5ae",
+        "interface": "#FFC86E",
+        "property.static": "#C75C5C",
+        "method": "#f0be6c",
+        "function": "#f0be6c",
+        "parameter": "#61AFE1",
+        "variable.local": "#BABED8",
+        "property": "#e98f8f",
+        "enumMember": "#C75C5C"
+      }
+    }
+  },
+  // Frequent Togglings
+  "gitlens.mode.active": "zen",
+  "debug.javascript.autoAttachFilter": "onlyWithFlag",
+  "diffEditor.renderSideBySide": true,
+  "diffEditor.experimental.showMoves": true,
+  "workbench.startupEditor": "none",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "gitlens.plusFeatures.enabled": false,
+  "gitlens.currentLine.pullRequests.enabled": false,
+  "gitlens.currentLine.format": "${author, }${agoOrDate}",
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.codeLens.enabled": false,
+  "gitlens.statusBar.enabled": false,
+  "gitlens.hovers.enabled": false,
+  "gitlens.blame.format": "${author|7-} ${agoOrDate|14-}",
+  "gitlens.blame.avatars": false,
+  "gitlens.blame.fontSize": 8,
+  "formatFiles.excludedFolders": ["node_modules", ".vscode", "dist", ".chrome", ".git"],
+  "gitlens.ai.experimental.model": "vscode",
+  "gitlens.ai.experimental.vscode.model": "copilot:gpt-4o",
+  "workbench.statusBar.visible": false
+}
